@@ -109,7 +109,13 @@ def main():
         return
 
     tz = pytz.timezone("Europe/Istanbul")
-    text = f"🧭 Pusula\n📅 {datetime.now(tz):%d.%m.%Y} itibariyle güncellenmiştir.\n🔗 {FIXED_LINK}"
+
+    text = (
+        f"🧭 Pusula\n"
+        f"📅 {datetime.now(tz):%d.%m.%Y} itibariyle güncellenmiştir.\n"
+        f"#Pusula #hissenisor #borsa #bist100 #katılımendeksi\n"
+        f"🔗 {FIXED_LINK}"
+    )
 
     # --- Twitter ---
     twitter_media_id = upload_media_twitter(image_path)
